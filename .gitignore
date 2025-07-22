@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Vite/React
+.vite/
+.cache/
+
+# dotenv environment variables
+.env
+.env.*.local
+
+# Optional npm cache directory
+.npm/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Debug
+*.pid
+*.seed
+*.pid.lock
+
+# Local history / backup
+*.bak
+*.orig
+*.swp
+
+# Others
+*.tgz
+yarn.lock
+.pnpm-debug.log
+.eslintcache
+
+# Mac specific
+Icon?

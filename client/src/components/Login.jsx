@@ -21,7 +21,7 @@ function Login() {
     setIsLoading(true);
     
     try {
-      const baseurl = import.meta.env.VITE_API_BASE_URL;
+      const baseurl = import.meta.env.VITE_API_URL;
       const res = await axios.post(`${baseurl}/api/login`, formData);
       localStorage.setItem("token", res.data.token);
       alert(res.data.message);

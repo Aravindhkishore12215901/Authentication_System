@@ -22,7 +22,9 @@ function Signup() {
     setIsLoading(true);
     
     try {
-      const res = await axios.post('http://localhost:5000/api/signup', formData);
+
+      const baseurl = import.meta.env.VITE_API_URL;
+      const res = await axios.post(`${baseurl}/api/singup`, formData)
       alert(res.data.message);
       setFormData({ name: '', email: '', password: '' });
       setIsLoading(false);

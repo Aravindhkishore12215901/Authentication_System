@@ -21,7 +21,7 @@ function Login() {
     setIsLoading(true);
     
     try {
-      const res = await axios.post('http://localhost:5000/api/login', formData);
+      const res = await axios.post('https://authentication-system-ky3o.onrender.com', formData);
       localStorage.setItem("token", res.data.token);
       alert(res.data.message);
       setFormData({ email: '', password: '' });

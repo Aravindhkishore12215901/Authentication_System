@@ -24,7 +24,7 @@ function Signup() {
     try {
 
       const baseurl = import.meta.env.VITE_API_URL;
-      const res = await axios.post(`${baseurl}/api/singup`, formData)
+      const res = await axios.post(`${baseurl}/api/signup`, formData)
       alert(res.data.message);
       setFormData({ name: '', email: '', password: '' });
       setIsLoading(false);
